@@ -27,7 +27,7 @@ def main():
     for j  in range(n):
       sublis.append(int(input()))
     matrix.append(sublis)
-  return matrix, n
+  saddle_point(matrix, n)
 
 def saddle_point(mat,n):
   for i in range(n):
@@ -45,10 +45,9 @@ def saddle_point(mat,n):
     if(n==m):
       print(str(row_min),"is Saddle point\n")
       print("coordinates are({0},{1})".format(i,j))
-      
+  #main()   # You can add this main function if you want to run your program in a loop
 
 
 if __name__ == "__main__" :
-  mat, n =main()
-  print(mat,n)
-  saddle_point(mat,n)
+  main()
+  
